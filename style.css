@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+}
+
+img{
+    max-width: 100%;
+    display: inherit;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.3rem;
+    color:hsl(236, 13%, 42%);
+    line-height: 2.2rem;
+}
+
+h1{
+    font-size: 4.7rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+h3{
+    color: white;
+}
+
+h4{
+    font-size: 3rem;
+    color:hsl(236, 13%, 42%);
+    padding-bottom: 1rem;
+}
+
+h5{
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+
+a{
+    color: hsl(236, 13%, 42%);
+}
+
+nav{
+    width: 96%;
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+nav img{
+    width: 5%;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.nav-links a{
+    padding-left: 3rem;
+}
+
+main{
+    width: 96%;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.main-grid{
+    display:grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "main-picture main-picture main-aside"
+    "sub-main1 sub-main2 main-aside"
+    "footer1 footer2 footer3"
+    ;
+}
+
+.main-picture {grid-area: main-picture;}
+.main-aside {grid-area: main-aside;}
+.sub-main1 {grid-area: sub-main1;}
+.sub-main2 {grid-area: sub-main2;}
+.footer1 {grid-area: footer1;}
+.footer2 {grid-area: footer2;}
+.footer3 {grid-area: footer3;}
+
+.main-aside{
+    background-color: hsl(240, 100%, 5%);
+    padding: 3rem 2rem;
+}
+
+.main-aside .hydrogen{
+    padding: 2rem 0;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.main-aside h3{
+    padding-bottom: 2rem;
+}
+
+.main-aside .ai{
+    padding: 2rem 0;
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.main-aside .vc{
+    padding: 2rem 0;
+}
+
+.main-aside h2{
+    font-size: 4rem;
+    color: hsl(35, 77%, 62%);
+}
+
+.sub-main2 button{
+    letter-spacing: 0.3rem;
+    padding: 1rem 2rem;
+    border: none;
+    color: white;
+    background-color: hsl(5, 85%, 63%);
+    margin-top: 4.2rem;
+    cursor: pointer;
+}
+
+.footer1{
+   display: grid; 
+   grid-template-columns: 1fr 2fr;
+   gap: 2rem; 
+}
+
+.footer2{
+   display: grid; 
+   grid-template-columns: 1fr 2fr;
+   gap: 2rem; 
+}
+
+.footer3{
+   display: grid; 
+   grid-template-columns: 1fr 2fr;
+   gap: 2rem; 
+}
+
